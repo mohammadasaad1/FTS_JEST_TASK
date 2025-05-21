@@ -10,5 +10,8 @@
   "description": "",
   "dependencies": {
     "jest": "^29.7.0"
+  },
+   "jest": {
+    "collectCoverage": true
   }
 }
