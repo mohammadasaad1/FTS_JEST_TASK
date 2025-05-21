@@ -6,7 +6,12 @@ const calc = (num1, operator, num2) => {
         case '+' : return num1 + num2 ;
         case '-' : return num1 - num2;
         case '*': return a * b;
-        break;
+        case '/':
+        if (num2 === 0) {
+         throw new Error('Division by zero');
+        }
+         return num1 / num2;
+        // no need for break key-word :) 
         default: throw new Error('Invalid operator');
     }
 };
